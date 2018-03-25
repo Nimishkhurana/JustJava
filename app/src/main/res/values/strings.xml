@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="qty">QUANTITY</string>
+    <string name="val">0</string>
+    <string name="cream">Whipped Cream (Price $1)</string>
+    <string name="Rs">\u20B9</string>
+    <string name="chocolate">Chocolate Toppings  (Price $2)</string>
+    <string name="order">ORDER</string>
+    <string name="orderSummary">ORDER SUMMARY</string>
+    <string name="price_val">Nothing Ordered Yet</string>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin2">8dp</dimen>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <dimen name="textsize">20sp</dimen>
+    <dimen name="size">48dp</dimen>
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
+    <dimen name="wrap">@dimen/wrap_content</dimen>
+    <item type="id" name="qty_textview"/>
+</resources>

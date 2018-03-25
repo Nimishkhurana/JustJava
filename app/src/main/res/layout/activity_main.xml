@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.justjava.MainActivity" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/coffeeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/coffee2"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textCapWords|textShortMessage"
+        android:hint="Name"
+        android:layout_margin="@dimen/margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOPPINGS"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin" />
+
+    <CheckBox
+        android:id="@+id/whippedCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cream"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin2" />
+
+    <CheckBox
+        android:id="@+id/chocolateTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chocolate"
+        android:textSize="16sp"
+        android:paddingLeft="24dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin2" />
+
+    <TextView
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap_content"
+        android:text="@string/qty"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin2">
+
+        <Button
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:text="@string/plus"
+            android:layout_marginLeft="@dimen/margin"
+            android:background="#795548"
+            android:textColor="@android:color/white"
+            android:onClick="increment" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="@dimen/wrap"
+            android:layout_height="@dimen/wrap"
+            android:text="@string/val"
+            android:layout_marginLeft="@dimen/margin"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:text="@string/minus"
+            android:background="#795548"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/margin"
+            android:onClick="decrement" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap_content"
+        android:text="@string/orderSummary"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap"
+        android:text="@string/price_val"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:layout_width="@dimen/wrap"
+        android:layout_height="@dimen/wrap"
+        android:text="@string/order"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:background="#3E2723"
+        android:textColor="@android:color/white"
+        android:onClick="submitOrder" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
